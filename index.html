@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+</head>
+<body>
+    <header>
+        <h1>repasoRider</h1>
+    </header>
+
+    <form action="#">
+        <label for="mes">Mes</label>
+        <select name="mes"   id="mes">  
+            <option value=""></option>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Nobiembre">Nobiembre</option>
+            <option value="Diciembre">Diciembre</option>
+        </select>
+        <br>
+        <br>
+        <label for="mes" >Año</label>
+        <select name="Año"   id="año">
+            <option value=""></option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Trimestre</label>
+        <input type="number" id="Trimestre">
+        <br>
+        <br>
+        
+        <div >
+            <input type = "radio" name = "form" value = "gana" id="caja1" /> Gana
+            <input type = "radio" name = "form" value = "pierde" id="caja2"   /> Pierde
+        </div>
+
+
+        
+        <br>
+        <label for="">Competencia</label>
+        <input type="text" id="Competencia">
+        <br>
+        <br>
+     
+        <input type="button" id="btnDatos" value="Datos" onclick="document.getElementById(guardarDatos(mes.value, año.value,Trimestre.value, Competencia.value, check= document.querySelector('input[name=form]:checked').value ))" >
+        <!-- <script>
+            console.log(document.getElementsByName('form'.value))
+            let check= document.querySelector('input[name="form"]:checked').value;
+            console.log(check)
+        </script> -->
+        
+
+    </form>
+
+
+    <div >
+        <p id="mensaje" ></p>
+
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
