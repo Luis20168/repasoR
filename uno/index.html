@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repaso</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,7 +13,7 @@
 
     <form action="#">
         <label for="mes">Mes</label>
-        <select name="mes"   id="mes">  
+        <select name="mes"  id="mes">  
             <option value=""></option>
             <option value="Enero">Enero</option>
             <option value="Febrero">Febrero</option>
@@ -46,8 +47,8 @@
         </select>
         <br>
         <br>
-        <label for="">Trimestre</label>
-        <input type="number" id="Trimestre">
+        <label for="">trimestre</label>
+        <input type="number" id="trimestre">
         <br>
         <br>
         
@@ -56,21 +57,43 @@
             <input type = "radio" name = "form" value = "pierde" id="caja2"   /> Pierde
         </div>
 
+ 
+        
+        <br>
+        <label for="">competencia</label>
+        <input type="text" id="competencia">
+        <br>
+        <br>
+
+        <label for="">Fecha</label>
+        <input type="date" id="fecha">
+        <br><br>
+
+        <select name="" id="opciones" >
+            <option value="">Seleccione</option>
+            <option value="analisis" id="analisis">Analisis</option>
+            <option value="diseño" id="diseño">Diseño</option>
+            
+        </select><br><br>
+        <div id="contenedor">
+           
+
+        </div>
+        
 
         
-        <br>
-        <label for="">Competencia</label>
-        <input type="text" id="Competencia">
-        <br>
-        <br>
-     
-        <input type="button" id="btnDatos" value="Datos" onclick="document.getElementById(guardarDatos(mes.value, año.value,Trimestre.value, Competencia.value, check= document.querySelector('input[name=form]:checked').value ))" >
-        <!-- <script>
-            console.log(document.getElementsByName('form'.value))
-            let check= document.querySelector('input[name="form"]:checked').value;
-            console.log(check)
-        </script> -->
+
+
         
+     
+        <input type="button" id="btnDatos" value="Datos" onclick="document.getElementById(guardarDatos(fecha.value ,mes.value, año.value,trimestre.value, competencia.value , check= document.querySelector('input[name=form]:checked').value))">
+
+
+        <br>
+        <br>
+
+       
+      
 
     </form>
 
@@ -84,7 +107,7 @@
 
 
 
-    <script src="main.js"></script>
+    <script src="main2.js"></script>
     
 </body>
 </html>
